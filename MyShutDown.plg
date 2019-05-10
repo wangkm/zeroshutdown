@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyShutDown - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\starry\LOCALS~1\Temp\RSP54B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MyShutDown.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\程序开发\自动关机\MyShutDown_working\MyConfirmDlg.cpp"
+"H:\程序开发\自动关机\MyShutDown_working\MyShutDown.cpp"
+"H:\程序开发\自动关机\MyShutDown_working\MyShutDownDlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\starry\LOCALS~1\Temp\RSP54B.tmp" 
+Creating temporary file "D:\DOCUME~1\starry\LOCALS~1\Temp\RSP54C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MyShutDown.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\程序开发\自动关机\MyShutDown_working\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\starry\LOCALS~1\Temp\RSP54C.tmp" 
+Creating temporary file "D:\DOCUME~1\starry\LOCALS~1\Temp\RSP54D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MyShutDown.pdb" /debug /machine:I386 /out:"Debug/MyShutDown.exe" /pdbtype:sept 
+".\Debug\MyConfirmDlg.obj"
+".\Debug\MyShutDown.obj"
+".\Debug\MyShutDownDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MyShutDown.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\starry\LOCALS~1\Temp\RSP54D.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+MyConfirmDlg.cpp
+MyShutDown.cpp
+MyShutDownDlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MyShutDown.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MyConfirmDlg.sbr" ".\Debug\MyShutDown.sbr" ".\Debug\MyShutDownDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MyShutDown.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

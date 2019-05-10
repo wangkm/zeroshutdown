@@ -1,0 +1,352 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyShutDown.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyShutDown.ico"
+IDR_ICONRUN             ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 184, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,10,20,20
+    LTEXT           "ZeroShutdown 0.41",IDC_STATIC,39,16,69,8,SS_NOPREFIX
+    LTEXT           "Copyright(c) 2005. ZeroApp",IDC_STATIC,11,34,114,10
+    DEFPUSHBUTTON   "确定",IDOK,123,7,50,14,WS_GROUP
+    PUSHBUTTON      "帮助",IDC_HELPTOPIC,123,24,50,14
+    LTEXT           "www.zeroapp.com",IDC_HOMEPAGE,43,50,65,10,SS_NOTIFY
+END
+
+IDD_MYSHUTDOWN_DIALOG DIALOGEX 0, 0, 339, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ZeroShutdown-未设定"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "本地计算机",IDC_LOCALHOST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,25,56,10
+    CONTROL         "远程计算机",IDC_REMOTE,"Button",BS_AUTORADIOBUTTON,21,
+                    91,56,10
+    CONTROL         "在",IDC_ATTIME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    22,176,24,10
+    CONTROL         "在",IDC_AFTERTIME,"Button",BS_AUTORADIOBUTTON,22,197,24,
+                    10
+    CONTROL         "立刻执行",IDC_HALT_NOW,"Button",BS_AUTORADIOBUTTON,22,
+                    218,193,10
+    EDITTEXT        IDC_EDIT4,79,23,136,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_DISABLED
+    COMBOBOX        IDC_COMBO1,78,45,79,78,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "强制关闭应用程序",IDC_FORCE,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_GROUP | WS_TABSTOP,77,66,80,10
+    EDITTEXT        IDC_EDIT5,79,88,136,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "重新启动",IDC_Reset_remote,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,78,122,48,10
+    CONTROL         "强制关闭应用程序",IDC_Force_remote,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,78,137,80,10
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP,
+                    46,173,66,15
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | 
+                    WS_DISABLED | WS_TABSTOP,131,173,57,15
+    EDITTEXT        IDC_EDIT1,47,195,25,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,97,196,27,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT3,141,196,27,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "设为缺省",IDC_ADVSET,228,147,50,24,BS_FLAT
+    PUSHBUTTON      "取消设定",IDC_CSL,228,177,50,24,BS_FLAT
+    DEFPUSHBUTTON   "确定",IDOK,228,209,50,24,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "关于...",ID_APP_ABOUT,282,147,50,24,BS_FLAT
+    PUSHBUTTON      "隐藏窗口",IDC_HIDE,282,177,50,24,BS_FLAT
+    PUSHBUTTON      "退出",IDCLOSE,282,209,50,24,BS_FLAT
+    GROUPBOX        "时间设定",IDC_STATIC,7,160,215,75
+    LTEXT           "时执行",IDC_STATIC,192,177,25,8
+    LTEXT           "秒之后执行",IDC_STATIC,176,200,41,8,NOT WS_GROUP
+    LTEXT           "小时",IDC_STATIC,76,199,17,8,NOT WS_GROUP
+    LTEXT           "分",IDC_STATIC,128,199,9,8
+    LTEXT           "日",IDC_STATIC,116,177,9,8,NOT WS_GROUP
+    GROUPBOX        "计算机设定",IDC_STATIC,7,7,215,147
+    LTEXT           "格式为\\\\ip, 需要具有相应的权限",IDC_STATIC,79,108,133,
+                    8
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,228,
+                    14,100,120,WS_EX_ACCEPTFILES
+END
+
+IDD_confirm DIALOGEX 0, 0, 182, 111
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ZeroShutdown"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "立刻执行",IDOK,26,86,50,18
+    PUSHBUTTON      "取消操作",IDCANCEL,110,86,50,18
+    CTEXT           "Static",IDC_Confirm,7,17,169,31,SS_CENTERIMAGE
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,62,168,
+                    14
+    GROUPBOX        "确认",IDC_STATIC,7,7,169,49
+END
+
+IDD_ALARM DIALOGEX 0, 0, 140, 144
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+CAPTION "Alarm"
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,44,123,50,14
+    EDITTEXT        IDC_EDIT1,7,76,126,41,ES_AUTOHSCROLL
+    LTEXT           "待办事宜：",IDC_STATIC,8,61,77,12
+END
+
+IDD_ALARMMSGSET DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "定时设定"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,45,172,43,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "请设定待办事宜",IDC_STATIC,10,23,88,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,4,1,1
+ PRODUCTVERSION 0,4,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "ZeroApp"
+            VALUE "FileDescription", "ZeroShutDown Microsoft 基础类应用程序"
+            VALUE "FileVersion", "0, 4, 1, 1"
+            VALUE "InternalName", "MyShutDown"
+            VALUE "LegalCopyright", "版权所有 (C) 2001"
+            VALUE "OriginalFilename", "ZeroShutDown.EXE"
+            VALUE "ProductName", "ZeroShutDown 应用程序"
+            VALUE "ProductVersion", "0, 4, 1, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_MYSHUTDOWN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_confirm, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_ALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_ALARMMSGSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RIGHT_MENU MENU 
+BEGIN
+    POPUP "右键菜单"
+    BEGIN
+        MENUITEM "显示窗口",                    ID_SHOWWND
+        MENUITEM "关于...",                     ID_APP_ABOUT
+        MENUITEM "退出",                        ID_END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BG1                 BITMAP                  "res\\bg.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ZeroShutDown(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PointToWeb          CURSOR                  "res\\harrow.cur"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MyShutDown.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
